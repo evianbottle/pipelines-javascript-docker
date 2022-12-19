@@ -24,6 +24,7 @@ jobs:
       with:
         aws-region: us-east-1
         role-to-assume: arn:aws:iam::515536943609:role/github_oidc
+        role-session-name: Github-login
 
     - name: Login to Amazon ECR
       id: login-ecr
